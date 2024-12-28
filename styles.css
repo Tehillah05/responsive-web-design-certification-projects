@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto Condensed", serif;
+    background: linear-gradient(90deg, rgb(19, 106, 160), rgb(173, 216, 230), rgb(19, 106, 160));
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.6); 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 50px auto;
+    max-width: 600px;
+    height: auto; 
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+#title {
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+}
+
+#description {
+    font-size: 16px;
+    padding: 10px 10px 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+label {
+    display: block;
+    
+}
+
+#name-label, #email-label, #number-label,#dropdown-label, #radio-label, #checkbox-label, #text-label {
+    /*font-weight: 550;*/
+    margin: 15px 0 8px 0;
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+#radio-label, #checkbox-label {
+    margin: 25px 0 15px 0;
+}
+
+#survey-form {
+    font-size: 20px;
+    padding: 30px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #00060A;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.radio-btn, .check {
+    font-size: 18px;
+    margin: 8px;
+}
+
+.checkbox {
+    margin-bottom: 25px;
+}
+
+select {
+    width: 104%;
+}
+
+textarea {
+    height: 100px;
+}
+
+#submit {
+    width: 104%;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(10, 10, 10, 0.6);;
+    color: white;
+    background-color: #3ab440;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+#submit:hover {
+    background-color: #9ca6ad;
+    transition: background-color 0.5s ease;
+}
