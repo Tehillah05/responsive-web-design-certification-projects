@@ -40,7 +40,6 @@ label {
 }
 
 #name-label, #email-label, #number-label,#dropdown-label, #radio-label, #checkbox-label, #text-label {
-    /*font-weight: 550;*/
     margin: 15px 0 8px 0;
     font-family: "Figtree", serif;
     font-optical-sizing: auto;
@@ -85,6 +84,7 @@ select {
 
 textarea {
     height: 100px;
+    resize: none;
 }
 
 #submit {
@@ -103,5 +103,5 @@ textarea {
 
 #submit:hover {
     background-color: #9ca6ad;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
 }
