@@ -1,16 +1,21 @@
+
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
     font-family: "Roboto Condensed", serif;
-    background: linear-gradient(90deg, rgb(19, 106, 160), rgb(173, 216, 230), rgb(19, 106, 160));
+    background: linear-gradient(90deg, rgb(19, 106, 160), rgb(173, 216, 230), rgb(19, 106, 160)); /* Gradient background for visual appeal */
 }
 
+/* Form Conatiner Styles */
 .form-container {
     background-color: rgba(255, 255, 255, 0.6); 
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Makes the form conatiner appear raised with a depth effect */ 
     width: 100%;
     margin: 50px auto;
     max-width: 600px;
@@ -20,12 +25,14 @@ body {
     
 }
 
+/* Title Styles */
 #title {
     font-size: 28px;
     padding: 10px;
     text-align: center;
 }
 
+/* Description Styles */
 #description {
     font-size: 16px;
     padding: 10px 10px 0 10px;
@@ -35,10 +42,11 @@ body {
 }
 
 label {
-    display: block;
+    display: block; /* Make labels appear at the top of input fields */ 
     
 }
 
+/* Input Label Font Styles */
 #name-label, #email-label, #number-label,#dropdown-label, #radio-label, #checkbox-label, #text-label {
     margin: 15px 0 8px 0;
     font-family: "Figtree", serif;
@@ -52,13 +60,15 @@ label {
     margin: 25px 0 15px 0;
 }
 
+/* General Form Content Styling */
 #survey-form {
     font-size: 20px;
     padding: 30px;
 }
 
+/* Input and Textarea Styles including Separate Styling for the Radio Buttons an Check boxes */
 input[type="text"], input[type="email"], input[type="number"], select, textarea {
-    width: 100%;
+    width: 100%; /* Make input fields span across the parent container for better accessibilty */
     padding: 10px;
     font-size: 16px;
     border-radius: 4px;
@@ -66,7 +76,7 @@ input[type="text"], input[type="email"], input[type="number"], select, textarea 
 }
 
 input[type="radio"], input[type="checkbox"] {
-    margin-right: 5px;
+    margin-right: 5px; /* Add space between inputs and labels */
 }
 
 .radio-btn, .check {
@@ -78,24 +88,22 @@ input[type="radio"], input[type="checkbox"] {
     margin-bottom: 25px;
 }
 
-select {
-    width: 104%;
-}
 
 textarea {
     height: 100px;
-    resize: none;
+    resize: none; /* Remove resize option */
 }
 
+/* Sybmit Button Styles */
 #submit {
-    width: 104%;
+    width: 100%;
     padding: 8px;
     margin-top: 20px;
     border-radius: 5px;
     border: 1px solid rgba(10, 10, 10, 0.6);;
     color: white;
     background-color: #3ab440;
-    cursor: pointer;
+    cursor: pointer; /* Change cursor to indicate that the button is clickable */
     font-size: 16px;
     font-weight: bold;
     
@@ -103,5 +111,5 @@ textarea {
 
 #submit:hover {
     background-color: #9ca6ad;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /*Smooth transition effect upon hover*/
 }
