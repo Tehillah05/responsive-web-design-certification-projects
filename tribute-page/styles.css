@@ -1,0 +1,130 @@
+/* Resetting default browser styles and enabling consistent box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Declaring reusable color variables */
+:root {
+    --color-primary: hsl(0, 0%, 83%); /* Light gray background */
+    --color-secondary: hsl(217, 50%, 10%); /* Dark blue text color */
+    --background-color: hsl(0, 0%, 100%); /* White background */
+}
+
+/* Styling the body element with font and background settings */
+body {
+    font-family: "Montserrat", serif; /* Elegant and modern font */
+    font-optical-sizing: auto; /* Ensures font adjusts for optical precision */
+    background-color: var(--color-primary); /* Light gray background */
+    color: var(--color-secondary); /* Dark blue text */
+    height: 100vh; /* Viewport height to fill the screen */
+}
+
+/* Center-aligning the title and tagline */
+#title, #tagline {
+    text-align: center;
+}
+
+/* Title styling */
+#title {
+    margin: 25px 0 10px;
+    font-size: 2.9rem;
+}
+
+/* Tagline styling */
+#tagline {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Styling the image container with rounded edges */
+#img-div {
+    background-color: var(--background-color);
+    height: 70vh; /* 70% of viewport height */
+    width: 80vw; /* 80% of viewport width */
+    margin: 0 auto 100px; /* Centered with bottom margin */
+    border-radius: 35px; /* Smooth rounded edges */
+    display: flex;
+    flex-direction: row; /* Align content in a row */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+}
+
+/* Ensuring the main image fits the container without distortion */
+#image {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+/* Styling all images as block elements to remove gaps */
+img {
+    display: block;
+}
+
+/* Styling the image caption */
+#img-caption {
+    margin-top: 100px;
+    padding: 50px;
+    font-weight: 510;
+    font-size: 1.2rem;
+}
+
+/* Styling the section containing tribute information */
+#tribute-info {
+    background-color: var(--background-color);
+    padding-bottom: 80px;
+}
+
+/* Flex container for the tribute information section */
+#tribute-section {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse; /* Reverse the direction of the content */
+    gap: 50px; /* Space between elements */
+    height: 70vh;
+    width: 80vw;
+    margin: auto;
+}
+
+/* Styling the header for the tribute section */
+#section-header {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 40px;
+}
+
+/* Styling the secondary image with a curved bottom-right corner */
+#tribute-section > #image2 {
+    height: 100%;
+    border-bottom-right-radius: 35px; /* Curved bottom-right corner */
+}
+
+/* Styling the paragraph container */
+#tribute-paragraphs {
+    padding: 40px;
+    display: flex;
+    flex-direction: column; /* Stack paragraphs vertically */
+    gap: 20px; /* Space between paragraphs */
+    text-align: justify; /* Align text for a clean look */
+    line-height: 1.3rem; /* Improve readability */
+    font-weight: 510;
+} 
+
+/* Styling the link to learn more */
+#redirect {
+    text-align: center;
+    padding-top: 60px;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--color-primary);
+    padding: 50px;
+    text-align: center;
+}
